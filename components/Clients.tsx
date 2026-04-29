@@ -1,20 +1,33 @@
-const logos = ["VANTAGE","FINARA","PRISM","ORBIS","KELTEC","SYNAPSE","MERIDIAN"];
+"use client";
+
+import {
+  SiGoogle,
+  SiNetflix,
+  SiMeta,
+  SiApple,
+  SiSpotify,
+} from "react-icons/si";
+
+const icons = [
+  SiGoogle,
+  SiNetflix,
+  SiMeta,
+  SiApple,
+  SiSpotify,
+];
 
 export default function Clients() {
   return (
-    <div className="px-8 lg:px-16 py-12 bg-bg2 border-t border-b border-border flex items-center gap-12 flex-wrap">
-      <span className="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-muted whitespace-nowrap">
-        Trusted by
-      </span>
-      <div className="flex gap-12 flex-wrap items-center">
-        {logos.map((l) => (
-          <span
-            key={l}
-            className="c-logo font-cabinet font-black text-[1.1rem] text-border tracking-[-0.03em] transition-colors hover:text-ink2 cursor-default"
-          >
-            {l}
-          </span>
-        ))}
+    <div className="px-8 lg:px-16 py-12">
+      <div className="overflow-hidden">
+        <div className="flex gap-16 w-max animate-scroll">
+          {[...icons, ...icons].map((Icon, i) => (
+            <Icon
+              key={i}
+              className="text-3xl text-black opacity-80 hover:opacity-100 transition"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
