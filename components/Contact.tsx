@@ -29,9 +29,9 @@ export function Contact() {
             <div key={c.label} className="flex gap-4 items-start">
               <div className="w-11 h-11 bg-card border border-border flex items-center justify-center text-lg shrink-0">{c.icon}</div>
               <div>
-                <div className="font-mono text-[0.65rem] uppercase tracking-widest text-muted mb-1">{c.label}</div>
+                <div className="font-mono text-[0.65rem] uppercase tracking-widest text-black mb-1">{c.label}</div>
                 {c.val.map((v, i) => (
-                  <div key={i} className={`text-[0.95rem] font-medium text-ink ${i === 1 ? "text-[0.85rem] text-muted font-normal" : ""}`}>{v}</div>
+                  <div key={i} className={`text-[0.95rem] font-medium text-black ${i === 1 ? "text-[0.85rem] text-black font-normal" : ""}`}>{v}</div>
                 ))}
               </div>
             </div>
@@ -43,18 +43,18 @@ export function Contact() {
           <div className="grid grid-cols-2 gap-4 mb-5">
             {["First Name","Last Name"].map((p) => (
               <div key={p}>
-                <label className="font-mono text-[0.65rem] uppercase tracking-widest text-muted block mb-2">{p}</label>
+                <label className="font-mono text-[0.65rem] uppercase tracking-widest text-black block mb-2">{p}</label>
                 <input placeholder={p==="First Name"?"Jane":"Smith"} className="w-full bg-bg border border-border text-ink font-epilogue text-[0.9rem] px-4 py-3 outline-none focus:border-accent transition-colors cursor-none" />
               </div>
             ))}
           </div>
           <div className="grid grid-cols-2 gap-4 mb-5">
             <div>
-              <label className="font-mono text-[0.65rem] uppercase tracking-widest text-muted block mb-2">Company</label>
+              <label className="font-mono text-[0.65rem] uppercase tracking-widest text-black block mb-2">Company</label>
               <input placeholder="Acme Corp" className="w-full bg-bg border border-border text-ink font-epilogue text-[0.9rem] px-4 py-3 outline-none focus:border-accent transition-colors cursor-none" />
             </div>
             <div>
-              <label className="font-mono text-[0.65rem] uppercase tracking-widest text-muted block mb-2">Service Interest</label>
+              <label className="font-mono text-[0.65rem] uppercase tracking-widest text-black block mb-2">Service Interest</label>
               <select className="w-full bg-bg border border-border text-ink font-epilogue text-[0.9rem] px-4 py-3 outline-none focus:border-accent transition-colors cursor-none appearance-none">
                 <option value="">Select a service…</option>
                 {SERVICES_LIST.map((s) => <option key={s}>{s}</option>)}
@@ -62,14 +62,14 @@ export function Contact() {
             </div>
           </div>
           <div className="mb-5">
-            <label className="font-mono text-[0.65rem] uppercase tracking-widest text-muted block mb-2">Email</label>
+            <label className="font-mono text-[0.65rem] uppercase tracking-widest text-black block mb-2">Email</label>
             <input type="email" placeholder="jane@acmecorp.com" className="w-full bg-bg border border-border text-ink font-epilogue text-[0.9rem] px-4 py-3 outline-none focus:border-accent transition-colors cursor-none" />
           </div>
           <div className="mb-5">
-            <label className="font-mono text-[0.65rem] uppercase tracking-widest text-muted block mb-2">Tell us about your project</label>
+            <label className="font-mono text-[0.65rem] uppercase tracking-widest text-black block mb-2">Tell us about your project</label>
             <textarea placeholder="Describe your challenge, timeline, and goals…" rows={5} className="w-full bg-bg border border-border text-ink font-epilogue text-[0.9rem] px-4 py-3 outline-none focus:border-accent transition-colors cursor-none resize-y" />
           </div>
-          <button className="w-full bg-ink text-bg font-mono text-[0.75rem] uppercase tracking-widest py-4.5 cursor-none hover:bg-accent transition-colors flex items-center justify-center gap-2.5">
+          <button className="w-full bg-ink text-bg font-mono text-[0.75rem] uppercase tracking-widest py-4.5 cursor-none hover:bg-accent transition-colors flex items-center justify-center gap-2.5 rounded-sm hover:text-white">
             Send Message <span>→</span>
           </button>
         </div>

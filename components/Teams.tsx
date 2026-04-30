@@ -1,7 +1,7 @@
 const TEAM = [
   { bg:"from-[#d4e4f4] to-[#a0b8d0]", face:"E", name:"Emmanuel Owunari Horsfall",  role:"CEO & Co-Founder",      bio:"15 years leading enterprise IT transformations across finance and healthcare sectors.", socials:["in","𝕏"] },
   { bg:"from-[#d4f4d4] to-[#a0d0a8]", face:"A", name:"Abiye Desire Omiete",   role:"CTO & Co Founder",      bio:"Certified CISSP with 10+ years in offensive security and compliance engineering.", socials:["in","𝕏"] },
-  { bg:"from-[#f4d4d4] to-[#d0a0a0]", face:"👩‍💻", name:"David David Alban",  role:"Technical Lead & Co-Founder",      bio:"Former AWS principal engineer. Architect of systems serving millions daily.", socials:["in","gh"] },
+  { bg:"from-[#f4d4d4] to-[#d0a0a0]", face:"D", name:"David David Alban",  role:"Technical Lead & Co-Founder",      bio:"Former AWS principal engineer. Architect of systems serving millions daily.", socials:["in","gh"] },
   // { bg:"from-[#f4f0d4] to-[#d0c8a0]", face:"👩‍🎨", name:"Sofia Reyes",   role:"Head of Design",        bio:"Bridges engineering and UX — designing interfaces that are both beautiful and bulletproof.", socials:["in","be"] },
   // { bg:"from-[#e4d4f4] to-[#b8a0d0]", face:"👨‍🚀", name:"Lior Ben-David",role:"Lead Cloud Architect",  bio:"Multi-cloud specialist. Has migrated 40+ enterprise environments without a single incident.", socials:["in","gh"] },
   // { bg:"from-[#d4f0f4] to-[#a0c8d0]", face:"👩‍💼", name:"Amara Diallo",  role:"Data Engineering Lead", bio:"Builds real-time data systems that process billions of events per day at sub-second latency.", socials:["in","𝕏"] },

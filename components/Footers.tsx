@@ -8,6 +8,10 @@ import {
   SiGithub,
 } from "react-icons/si";
 
+
+import Image from "next/image";
+import LogoWhite from "../public/logowhite.png";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
@@ -17,9 +21,14 @@ export default function Footer() {
         {/* Brand + Newsletter */}
         <div className="space-y-6 lg:col-span-2">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">
-              Horspulse
-            </h2>
+            <Link href="/">
+                      <Image
+                        src={LogoWhite}
+                        alt="Horspulse Logo"
+                        className="w-28 transition-all duration-300"
+                        priority
+                      />
+                    </Link>
             <p className="text-sm text-gray-400 max-w-sm leading-relaxed mt-2">
               We build modern digital experiences—web platforms, design systems,
               and scalable solutions that help businesses grow.
