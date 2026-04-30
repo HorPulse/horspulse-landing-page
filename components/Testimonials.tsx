@@ -16,7 +16,7 @@ export default function Testimonials() {
       <h2 className="reveal font-cabinet font-black text-[clamp(2.2rem,4vw,3.8rem)] tracking-[-0.04em] leading-[1.05] text-white mb-4">
         What Our Clients Say
       </h2>
-      <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-darkmuted max-w-120">
+      <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-black max-w-120">
         Dont take our word for it — heres what the people who hired us have to say.
       </p>
 
@@ -26,20 +26,20 @@ export default function Testimonials() {
             key={i}
             className={`testi-card relative bg-dark border border-darkborder2 p-9 transition-colors duration-200 hover:border-accent reveal ${i%3===1?"delay-1":i%3===2?"delay-2":""}`}
           >
-            <span className="absolute top-7 right-7 font-mono text-[0.65rem] text-darkborder2">
+            <span className="absolute top-7 right-7 font-mono text-[0.65rem] text-black">
               0{i + 1}
             </span>
             <div className="flex gap-1 mb-5">
               {[...Array(5)].map((_, j) => <span key={j} className="text-accent text-[0.85rem]">★</span>)}
             </div>
-            <p className="text-[0.95rem] italic leading-[1.8] text-muted mb-7">{t.quote}</p>
+            <p className="text-[0.95rem] italic leading-[1.8] text-black mb-7">{t.quote}</p>
             <div className="flex items-center gap-3.5 border-t border-darkborder2 pt-5">
               <div className={`w-10.5 h-10.5 rounded-full flex items-center justify-center font-cabinet font-black text-[0.95rem] text-white shrink-0 ${t.avBg}`}>
                 {t.av}
               </div>
-              <div>
+              <div className="flex items-center justify-between">
                 <div className="font-cabinet font-bold text-[0.95rem] text-white">{t.name}</div>
-                <div className="font-mono text-[0.62rem] uppercase tracking-[0.08em] text-darkmuted2 mt-0.5">{t.role}</div>
+                <div className="font-mono text-[0.62rem] uppercase tracking-[0.08em] text-black mt-0.5">{t.role}</div>
               </div>
             </div>
           </div>

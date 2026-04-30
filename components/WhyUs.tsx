@@ -16,7 +16,7 @@ export default function WhyUs() {
   return (
     <section className="bg-bg px-8 lg:px-16 py-24">
       <div className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-accent mb-3.5 flex items-center gap-2">
-        <span className="block w-5 h-[1.5px] bg-accent" />Why Nexcore
+        <span className="block w-5 h-[1.5px] bg-accent" />Why HorsPulse
       </div>
       <h2 className="reveal font-cabinet font-black text-[clamp(2.2rem,4vw,3.8rem)] tracking-[-0.04em] leading-[1.05] text-ink mb-0">
         Built on Proof,<br />Not Promise
@@ -27,20 +27,20 @@ export default function WhyUs() {
         <div className="reveal-l">
           <div className="relative bg-card border border-border p-10">
             <div className="absolute top-1px left-10 w-15 h-0.75 bg-accent" />
-            <div className="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-muted mb-7">
+            <div className="font-mono text-[0.68rem] uppercase tracking-[0.12em] text-black mb-7">
               Performance Benchmarks
             </div>
             <div className="flex flex-col gap-5">
               {METRICS.map((m) => (
                 <div key={m.label} className="flex items-center gap-4">
-                  <span className="font-mono text-[0.68rem] uppercase tracking-[0.08em] text-muted w-20">{m.label}</span>
+                  <span className="font-mono text-[0.68rem] uppercase tracking-[0.08em] text-black w-20">{m.label}</span>
                   <div className="flex-1 h-1.5 bg-bg2 overflow-hidden">
                     <div
                       className="h-full bg-accent bar-animated"
                       style={{ ["--bar-w" as string]: m.w }}
                     />
                   </div>
-                  <span className="font-cabinet font-black text-[0.95rem] text-ink w-11 text-right">{m.val}</span>
+                  <span className="font-cabinet font-black text-[0.95rem] text-ink w-11 text-black">{m.val}</span>
                 </div>
               ))}
             </div>

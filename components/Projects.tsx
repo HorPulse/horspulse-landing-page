@@ -19,7 +19,7 @@ export function Projects() {
             Selected Projects
           </h2>
         </div>
-        <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-ink2 max-w-120">
+        <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-black max-w-120">
           Real solutions for real challenges — across industries, at scale.
         </p>
       </div>
@@ -37,12 +37,12 @@ export function Projects() {
               </span>
             </div>
             <div className="p-7">
-              <div className="font-mono text-[0.65rem] uppercase tracking-widest text-muted mb-2">{p.client}</div>
+              <div className="font-mono text-[0.65rem] uppercase tracking-widest text-black mb-2">{p.client}</div>
               <div className="font-cabinet font-black text-[1.15rem] text-ink tracking-[-0.02em] mb-2.5 leading-[1.2]">{p.title}</div>
-              <p className="text-[0.85rem] leading-[1.7] text-ink2 mb-5">{p.desc}</p>
+              <p className="text-[0.85rem] leading-[1.7] text-black mb-5">{p.desc}</p>
               <div className="flex gap-2 flex-wrap">
                 {p.tags.map((t) => (
-                  <span key={t} className="font-mono text-[0.6rem] uppercase tracking-[0.06em] px-2.5 py-1 bg-bg border border-border text-muted">
+                  <span key={t} className="font-mono text-[0.6rem] uppercase tracking-[0.06em] px-2.5 py-1 bg-bg border border-border text-black">
                     {t}
                   </span>
                 ))}

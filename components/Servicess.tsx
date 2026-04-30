@@ -90,7 +90,7 @@ const SERVICES = [
 export default function Services() {
   const [active, setActive] = useState(0);
   const s = SERVICES[active];
-  const Icon = s.icon;
+  // const Icon = s.icon;
 
   return (
     <section id="services" className="bg-ink px-8 lg:px-16 py-24">

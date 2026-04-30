@@ -1,12 +1,7 @@
 const TEAM = [
   { bg:"from-[#d4e4f4] to-[#a0b8d0]", face:"E", name:"Emmanuel Owunari Horsfall",  role:"CEO & Co-Founder",      bio:"15 years leading enterprise IT transformations across finance and healthcare sectors.", socials:["in","𝕏"] },
   { bg:"from-[#d4f4d4] to-[#a0d0a8]", face:"A", name:"Abiye Desire Omiete",   role:"CTO & Co Founder",      bio:"Certified CISSP with 10+ years in offensive security and compliance engineering.", socials:["in","𝕏"] },
-  { bg:"from-[#f4d4d4] to-[#d0a0a0]", face:"D", name:"David David Alban",  role:"Technical Lead & Co-Founder",      bio:"Former AWS principal engineer. Architect of systems serving millions daily.", socials:["in","gh"] },
-  // { bg:"from-[#f4f0d4] to-[#d0c8a0]", face:"👩‍🎨", name:"Sofia Reyes",   role:"Head of Design",        bio:"Bridges engineering and UX — designing interfaces that are both beautiful and bulletproof.", socials:["in","be"] },
-  // { bg:"from-[#e4d4f4] to-[#b8a0d0]", face:"👨‍🚀", name:"Lior Ben-David",role:"Lead Cloud Architect",  bio:"Multi-cloud specialist. Has migrated 40+ enterprise environments without a single incident.", socials:["in","gh"] },
-  // { bg:"from-[#d4f0f4] to-[#a0c8d0]", face:"👩‍💼", name:"Amara Diallo",  role:"Data Engineering Lead", bio:"Builds real-time data systems that process billions of events per day at sub-second latency.", socials:["in","𝕏"] },
-  // { bg:"from-[#f4e4d4] to-[#d0b8a0]", face:"👨‍💻", name:"James Kowalski",role:"Principal Engineer",    bio:"Microservices and distributed systems expert. Maintainer of two open-source projects with 8K stars.", socials:["gh","𝕏"] },
-  // { bg:"from-[#d4d4f4] to-[#a0a0d0]", face:"👩‍🔬", name:"Yuki Tanaka",   role:"DevOps Lead",           bio:"Kubernetes evangelist. Reduced deployment cycles from weeks to minutes for 20+ enterprise clients.", socials:["in","gh"] },
+  { bg:"from-[#f4d4d4] to-[#d0a0a0]", face:"D", name:"David David Alban",  role:"Technical Lead & Co-Founder",      bio:"Former AWS principal engineer. Architect of systems serving millions daily.", socials:["in","gh"] }
 ];
 
 export function Teams() {
@@ -21,7 +16,7 @@ export function Teams() {
             Meet the Team
           </h2>
         </div>
-        <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-ink2 max-w-120">
+        <p className="reveal font-epilogue text-[1rem] leading-[1.8] text-black max-w-120">
           Experienced engineers, architects, and strategists — united by a commitment to building things that last.
         </p>
       </div>
@@ -38,15 +33,15 @@ export function Teams() {
               </div>
             </div>
             <div className="p-5.5">
-              <div className="font-cabinet font-black text-[1.05rem] text-ink tracking-[-0.02em] mb-1">{m.name}</div>
+              <div className="font-cabinet font-black text-[1.05rem] text-black tracking-[-0.02em] mb-1">{m.name}</div>
               <div className="font-mono text-[0.65rem] uppercase tracking-[0.08em] text-accent mb-2.5">{m.role}</div>
-              <p className="text-[0.82rem] leading-[1.65] text-muted">{m.bio}</p>
+              <p className="text-[0.82rem] leading-[1.65] text-black">{m.bio}</p>
               <div className="mt-3.5 flex gap-2.5">
                 {m.socials.map((s) => (
                   <a
                     key={s}
                     href="#"
-                    className="w-7 h-7 border border-border flex items-center justify-center text-[0.65rem] text-muted cursor-none transition-all hover:bg-ink hover:border-ink hover:text-white"
+                    className="w-7 h-7 border border-border flex items-center justify-center text-[0.65rem] text-black cursor-none transition-all hover:bg-ink hover:border-ink hover:text-white"
                   >
                     {s}
                   </a>
