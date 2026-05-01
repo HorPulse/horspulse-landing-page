@@ -11,6 +11,7 @@ import Servicess from "@/components/Servicess";
 import { Teams } from "@/components/Teams";
 import Testimonials from "@/components/Testimonials";
 import WhyUs from "@/components/WhyUs";
+import Transform from "@/components/Transform";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Teams />
       <Testimonials />
       <WhyUs />
+      <Transform />
       <Contact />
       <Footers />
       </main>

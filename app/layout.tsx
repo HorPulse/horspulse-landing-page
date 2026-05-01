@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SplashLoader from "@/components/SplashLoader";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-bg text-ink font-epilogue overflow-x-hidden">
-       <SplashLoader>{children}</SplashLoader>
+        <SplashLoader>{children}</SplashLoader>
+        <WhatsAppButton />
       </body>
     </html>
   );

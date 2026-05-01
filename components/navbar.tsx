@@ -44,7 +44,6 @@ export function Navbar() {
       }`}
     >
       <div className="flex justify-between items-center h-10">
-
         {/* LOGO SWITCH */}
         <Link href="/">
           <Image
@@ -71,10 +70,12 @@ export function Navbar() {
 
         {/* CTA + Mobile */}
         <div className="flex items-center gap-4">
-
           <Button
-            variant="gradient"
-            className="hidden sm:inline-flex rounded-full text-white font-mono text-[0.72rem] uppercase tracking-widest px-6 py-2"
+            className="rounded-full px-8 py-4 text-sm font-bold tracking-wide text-white transition-all"
+            style={{
+              background: "linear-gradient(135deg, #0EA5E9 0%, #6366F1 100%)",
+              boxShadow: "0 0 16px rgba(56,189,248,0.25)",
+            }}
           >
             Start a Project
           </Button>
@@ -86,7 +87,6 @@ export function Navbar() {
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-
         </div>
       </div>
 
@@ -104,7 +104,10 @@ export function Navbar() {
             </li>
           ))}
 
-          <Button variant="gradient" className="w-full mt-4 rounded-full text-white font-mono text-[0.72rem] uppercase tracking-widest">
+          <Button
+            variant="gradient"
+            className="w-full mt-4 rounded-full text-white font-mono text-[0.72rem] uppercase tracking-widest"
+          >
             Start a Project
           </Button>
         </ul>
