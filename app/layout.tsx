@@ -1,6 +1,7 @@
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import SplashLoader from "@/components/SplashLoader";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -12,10 +13,11 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-// export const metadata: Metadata = {
-//   title: "HorsPulse",
-//   description: "Professional IT Solutions",
-// };
+export const metadata: Metadata = {
+  title: "HorsPulse — IT Solutions & Digital Transformation",
+  description:
+    "We build scalable, secure, and modern digital solutions for businesses.",
+};
 
 export default function RootLayout({
   children,
@@ -24,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className="bg-bg text-ink font-epilogue overflow-x-hidden">{children}</body>
+      <body className="bg-bg text-ink font-epilogue overflow-x-hidden">
+       <SplashLoader>{children}</SplashLoader>
+      </body>
     </html>
   );
 }
