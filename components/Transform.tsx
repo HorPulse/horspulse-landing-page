@@ -1,7 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, type Variants } from "framer-motion";
+
+const EASE = "easeOut"; 
+
 
 const IMAGES = [
   {
@@ -25,28 +28,29 @@ const IMAGES = [
 ];
 
 const SERVICES = [
-  { icon: "☁️", title: "Cloud Solutions", desc: "Scalable infrastructure that grows with you" },
+  { icon: "☁️", title: "Software Development", desc: "Scalable infrastructure that grows with you" },
   { icon: "🛡️", title: "Cyber Security", desc: "Enterprise-grade protection, always on" },
   { icon: "📊", title: "Data & Analytics", desc: "Turn raw data into competitive advantage" },
   { icon: "🤖", title: "AI Automation", desc: "Intelligent workflows, less manual effort" },
 ];
 
-// Animation variants
-const fadeUp = {
+const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
-  visible: (i = 0) => ({
+  visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.6, delay: i * 0.1, ease: EASE },
   }),
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.88 },
-  visible: (i = 0) => ({
+  visible: (i: number = 0) => ({
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.55, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.55, delay: i * 0.12, ease },
   }),
 };
 

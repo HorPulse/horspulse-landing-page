@@ -32,18 +32,18 @@ export default function Footer() {
                 priority
               />
             </Link>
-            <p className="text-sm text-gray-400 max-w-sm leading-relaxed mt-2">
-              We build modern digital experiences—web platforms, design systems,
+            <p className=" text-white max-w-sm leading-relaxed mt-2">
+              We build modern digital experiences such as web platforms, design systems,
               and scalable solutions that help businesses grow.
             </p>
           </div>
 
           {/* Location */}
-          <p className="text-xs text-gray-500">Abuja, Nigeria</p>
+          <p className="text-white">Abuja, Nigeria</p>
 
           {/* Newsletter */}
           <div className="space-y-3">
-            <p className="text-sm font-medium">Subscribe to our newsletter</p>
+            <p className="font-medium text-white">Subscribe to our newsletter</p>
 
             <form className="flex w-full max-w-sm">
               <input
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
 
           {/* Socials */}
-          <div className="flex gap-4 pt-2">
+          <div className="flex gap-4 pt-2 text-white">
             <FaXTwitter className="hover:text-gray-300 cursor-pointer" />
             <FaLinkedin className="hover:text-gray-300 cursor-pointer" />
             <SiInstagram className="hover:text-gray-300 cursor-pointer" />
@@ -79,12 +79,6 @@ export default function Footer() {
               <Link href="#">About</Link>
             </li>
             <li>
-              <Link href="#">Careers</Link>
-            </li>
-            <li>
-              <Link href="#">Blog</Link>
-            </li>
-            <li>
               <Link href="#">Contact</Link>
             </li>
           </ul>
@@ -96,7 +90,7 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm text-gray-400">
             <li>
-              <Link href="#">Web Development</Link>
+              <Link href="#">Software Development</Link>
             </li>
             <li>
               <Link href="#">UI/UX Design</Link>
@@ -136,12 +130,6 @@ export default function Footer() {
         <p className="text-xs text-gray-500 text-center md:text-left">
           © {new Date().getFullYear()} Horspulse. All rights reserved.
         </p>
-
-        <div className="flex items-center gap-6 text-xs text-gray-500">
-          <Link href="#">Privacy</Link>
-          <Link href="#">Terms</Link>
-          {/* <Link href="#">Sitemap</Link> */}
-        </div>
       </div>
     </footer>
   );
