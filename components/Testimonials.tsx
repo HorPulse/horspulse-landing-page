@@ -53,7 +53,7 @@ const TESTI = [
     role: "Chief Data Officer — Keltec Energy",
     location: "Ibadan, NG",
     quote:
-      "The data platform Nexcore built processes 4TB a day flawlessly. Our analysts now make decisions in minutes that used to take weeks. Transformative work.",
+      "The data platform HorsPulse built processes 4TB a day flawlessly. Our analysts now make decisions in minutes that used to take weeks. Transformative work.",
   },
   {
     av: "RV",
@@ -62,7 +62,7 @@ const TESTI = [
     role: "CISO — Meridian Finance",
     location: "Lagos, NG",
     quote:
-      "SOC 2 and ISO 27001 in 6 months. I thought that was impossible. Nexcore delivered on schedule, on budget, and our auditors were impressed by the documentation quality.",
+      "SOC 2 and ISO 27001 in 6 months. I thought that was impossible. HorsPulse delivered on schedule, on budget, and our auditors were impressed by the documentation quality.",
   },
 ];
 
