@@ -55,7 +55,7 @@ export function JoinCommunity() {
       ref={ref}
       className="px-8 py-10 lg:px-16"
     >
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 md:px-8 lg:px-10">
         <motion.div
           variants={cardVariants}
           initial="hidden"

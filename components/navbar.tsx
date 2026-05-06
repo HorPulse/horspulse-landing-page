@@ -70,8 +70,9 @@ export function Navbar() {
 
         {/* CTA + Mobile */}
         <div className="flex items-center gap-4">
-          <Button
-            className="rounded-full px-8 py-4 text-sm font-bold tracking-wide text-white transition-all hidden md:inline-flex"
+          <Link href="#contact">
+                    <Button
+            className="rounded-full px-8 py-4 text-sm font-bold tracking-wide cursor-pointer text-white transition-all hidden md:inline-flex"
             style={{
               background: "linear-gradient(135deg, #0EA5E9 0%, #6366F1 100%)",
               boxShadow: "0 0 16px rgba(56,189,248,0.25)",
@@ -79,6 +80,7 @@ export function Navbar() {
           >
             Start a Project
           </Button>
+          </Link>
 
           <button
             onClick={() => setIsOpen(!isOpen)}

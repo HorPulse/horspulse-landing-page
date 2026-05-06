@@ -11,18 +11,17 @@ const INFO = [
     icon: "📍",
     label: "Headquarters",
     val: "Abuja, Nigeria",
-    sub: "Plot 42, Wuse II Business District",
   },
   {
     icon: "📞",
     label: "Phone",
-    val: "+234 (0) 800 000 0000",
+    val: "+234 7062 987 803",
     sub: "WhatsApp available",
   },
   {
     icon: "✉️",
     label: "Email",
-    val: "hello@horspulse.io",
+    val: "horspulse@gmail.com",
     sub: "projects@horspulse.io for RFPs",
   },
   {
@@ -33,7 +32,6 @@ const INFO = [
   },
   {
     icon: "💬",
-    label: "Live Chat",
     val: "Available on site",
     sub: "Typically replies in under 2 minutes",
   },

@@ -28,18 +28,31 @@ const TEAM: TeamMember[] = [
     initial: "E",
     gradient: "linear-gradient(160deg, #1D5EFF 0%, #4B83FF 60%, #93c5fd 100%)",
     name: "Emmanuel Owunari Horsfall",
-    role: "CEO & Co-Founder",
+    role: "Chief Executive Officer",
     bio: "15 years leading enterprise IT transformations across finance and healthcare sectors.",
     socials: [
       { icon: <FaLinkedinIn />, href: "https://linkedin.com/in/", label: "LinkedIn" },
       { icon: <FaXTwitter />,   href: "https://x.com/",           label: "X / Twitter" },
     ],
   },
+
+   {
+    initial: "A",
+    gradient: "linear-gradient(160deg, #1e1b4b 0%, #4338ca 60%, #818cf8 100%)",
+    name: "Abiye Levi West",
+    role: "Chief Operations Officer",
+    bio: "Results-driven leader with a proven track record in operational excellence and team development.",
+    socials: [
+      { icon: <FaLinkedinIn />, href: "https://linkedin.com/in/", label: "LinkedIn" },
+      { icon: <FaXTwitter />,   href: "https://x.com/",           label: "X / Twitter" },
+      { icon: <FaBehance />,    href: "https://behance.net/",     label: "Behance" },
+    ],
+  },
   {
     initial: "A",
     gradient: "linear-gradient(160deg, #0f172a 0%, #1e3a5f 60%, #2563eb 100%)",
     name: "Abiye Desire Omiete",
-    role: "CTO & Co-Founder",
+    role: "Chief Technology Officer",
     bio: "Full-stack architect with deep expertise in cloud-native systems and developer tooling.",
     socials: [
       { icon: <FaLinkedinIn />, href: "https://linkedin.com/in/", label: "LinkedIn" },
@@ -51,7 +64,7 @@ const TEAM: TeamMember[] = [
     initial: "D",
     gradient: "linear-gradient(160deg, #0c4a6e 0%, #0369a1 60%, #38bdf8 100%)",
     name: "David Alban",
-    role: "Technical Lead & Co-Founder",
+    role: "Team Technical Lead",
     bio: "Former AWS principal engineer. Architect of systems serving millions of requests daily.",
     socials: [
       { icon: <FaLinkedinIn />, href: "https://linkedin.com/in/", label: "LinkedIn" },
@@ -70,6 +83,7 @@ const TEAM: TeamMember[] = [
       { icon: <FaBehance />,    href: "https://behance.net/",     label: "Behance" },
     ],
   },
+  
 ];
 
 const cardVariants: Variants = {

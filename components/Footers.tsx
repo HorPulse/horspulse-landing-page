@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { SiInstagram, SiGithub } from "react-icons/si";
+import { SiInstagram } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa";
 
 import Image from "next/image";
 import LogoWhite from "../public/logowhite.png";
@@ -62,10 +63,21 @@ export default function Footer() {
 
           {/* Socials */}
           <div className="flex gap-4 pt-2 text-white">
-            <FaXTwitter className="hover:text-gray-300 cursor-pointer" />
-            <FaLinkedin className="hover:text-gray-300 cursor-pointer" />
-            <SiInstagram className="hover:text-gray-300 cursor-pointer" />
-            <SiGithub className="hover:text-gray-300 cursor-pointer" />
+            <Link href="https://x.com/HorsPulse" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="hover:text-gray-300 cursor-pointer" />
+            </Link>
+            
+            <Link href="https://www.linkedin.com/company/horspulse" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="hover:text-gray-300 cursor-pointer" />
+            </Link>
+            
+            <Link href="https://instagram.com/horspulse" target="_blank" rel="noopener noreferrer">
+              <SiInstagram className="hover:text-gray-300 cursor-pointer" />
+            </Link>
+
+            <Link href="https://facebook.com/share/15mF6Bd9o8N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="hover:text-gray-300 cursor-pointer" />
+            </Link>
           </div>
         </div>
 
@@ -90,16 +102,31 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm text-gray-400">
             <li>
+              <Link href="#">Branding & Identity</Link>
+            </li>
+            <li>
               <Link href="#">Software Development</Link>
             </li>
             <li>
-              <Link href="#">UI/UX Design</Link>
+              <Link href="#">Digital Marketing</Link>
             </li>
             <li>
-              <Link href="#">Branding</Link>
+              <Link href="#">Promotional Materials</Link>
             </li>
             <li>
-              <Link href="#">Consulting</Link>
+              <Link href="#">Cybersecurity</Link>
+            </li>
+            <li>
+              <Link href="#">AI Automations</Link>
+            </li>
+            <li>
+              <Link href="#">IT Support & Consultation</Link>
+            </li>
+            <li>
+              <Link href="#">Tech Trainings & Webinars</Link>
+            </li>
+            <li>
+              <Link href="#">Promotional Products</Link>
             </li>
           </ul>
         </div>
